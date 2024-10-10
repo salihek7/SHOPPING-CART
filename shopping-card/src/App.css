@@ -1,0 +1,126 @@
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #282c34;
+  padding: 10px;
+  color: white;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.home, .cart {
+  padding: 20px;
+}
+
+/* Item List Styles */
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items in the row */
+}
+
+.item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px; /* Fixed width for all items */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between; /* Space between image, text, and button */
+  text-align: center;
+}
+
+.item img {
+  width: 100%; /* Image fills the width of the container */
+  height: 150px; /* Fixed height for the image */
+  object-fit: cover; /* Maintain aspect ratio and fill area */
+}
+
+.item h2 {
+  font-size: 16px; /* Set a consistent font size */
+  margin: 10px 0; /* Space around the title */
+}
+
+.item p {
+  font-size: 14px; /* Set a consistent font size for price */
+  margin: 5px 0; /* Space around the price */
+}
+
+.item button {
+  margin-top: auto; /* Push button to the bottom */
+  background-color: #28a745; /* Button color */
+  color: white; /* Button text color */
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+}
+
+.item button:hover {
+  background-color: #218838; /* Darker shade on hover */
+}
+
+/* Cart Styles */
+.cart-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #1a0e0e;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: background-color 0.2s;
+}
+
+.cart-item:hover {
+  background-color: hwb(57 55% 7%); /* Change background on hover */
+}
+
+.cart-item img {
+  width: 100px; /* Set a consistent width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover image without distortion */
+  margin-right: 20px; /* Space between image and text */
+}
+
+.cart-item div {
+  flex-grow: 1; /* Allow text container to grow */
+}
+
+.cart-item h3 {
+  margin: 0;
+}
+
+.cart-item p {
+  margin: 5px 0; /* Spacing for paragraph elements */
+}
+
+.cart-summary {
+  margin-top: 20px;
+  border-top: 1px solid #320d0d;
+  padding-top: 10px;
+  
+}
+
+/* Cart Button Styles */
+.cart button {
+  margin-top: 20px; /* Add space above the button */
+  background-color: #007bff; /* Button color */
+  color: white; /* Button text color */
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+}
+
+.cart button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
